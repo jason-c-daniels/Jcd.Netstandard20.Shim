@@ -26,8 +26,16 @@
       <PackageVersion>1.0.0</PackageVersion>
       <AssemblyVersion>1.0.0</AssemblyVersion>
       <FileVersion>1.0.0</FileVersion>
+      <PackageIcon>Jason.C.Daniels.jpg</PackageIcon>
    </PropertyGroup>
-
+   
+   <ItemGroup>
+      <None Remove="icon\Jason.C.Daniels.jpg"/>
+      <Content Include="icon\Jason.C.Daniels.jpg" Pack="true" PackagePath="\">
+         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+   </ItemGroup>
+   
    <PropertyGroup>
       <PackageReadmeFile>README.md</PackageReadmeFile>
    </PropertyGroup>
