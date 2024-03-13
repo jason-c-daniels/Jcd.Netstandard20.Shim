@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DefaultDocumentation" Version="0.8.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Jcd.Validations" Version="1.2.0" />
+  </ItemGroup>
+
+
+
+      <PropertyGroup>
+          <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+          <Title>Jcd.Netstandard20.Shim</Title>
+          <Authors>Jason C. Daniels</Authors>
+          <Description>A short description goes here.</Description>
+          <Copyright>2024</Copyright>
+          <PackageProjectUrl>https://github.com/jason-c-daniels/Jcd.Netstandard20.Shim</PackageProjectUrl>
+          <PackageLicenseUrl>https://github.com/jason-c-daniels/Jcd.Netstandard20.Shim/blob/main/LICENSE</PackageLicenseUrl>
+          <RepositoryUrl>https://github.com/jason-c-daniels/Jcd.Netstandard20.Shim</RepositoryUrl>
+          <RepositoryType>GitHub</RepositoryType>
+          <PackageVersion>0.0.1</PackageVersion>
+          <AssemblyVersion>0.0.1</AssemblyVersion>
+          <FileVersion>0.0.1</FileVersion>
+          <TargetFramework>netstandard2.0</TargetFramework>
+          <PackageIconUrl></PackageIconUrl>
+          <PackageReleaseNotes></PackageReleaseNotes>
+      </PropertyGroup>
+
+      <PropertyGroup>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+      </PropertyGroup>
+
+      <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+        <None Include="..\LICENSE" Pack="false" PackagePath="\" />
+        <None Include="..\nuget.config" Pack="false" PackagePath="\" />
+      </ItemGroup>
+
+      <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DocumentationFile>..\docs\Jcd.Netstandard20.Shim.xml</DocumentationFile>
+      </PropertyGroup>
+
+      <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <DocumentationFile>..\docs\Jcd.Netstandard20.Shim.xml</DocumentationFile>
+      </PropertyGroup>
+
+  </Project>
+  
