@@ -17,7 +17,7 @@
       <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
       <Title>Jcd.Netstandard20.Shim</Title>
       <Authors>Jason C. Daniels</Authors>
-      <Description>A short description goes here.</Description>
+      <Description>Provides Range, Index, and Nullability attributes for netstandard2.0. Types are compiled out for netstandard2.1 and up.</Description>
       <Copyright>2024</Copyright>
       <PackageProjectUrl>https://github.com/jason-c-daniels/Jcd.Netstandard20.Shim</PackageProjectUrl>
       <PackageLicenseUrl>https://github.com/jason-c-daniels/Jcd.Netstandard20.Shim/blob/main/LICENSE</PackageLicenseUrl>
